@@ -6,26 +6,23 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "copy-webpack-plugin": "^4.0.1",
-    "css-loader": "^0.26.0",
-    "lodash": "^4.17.4",
-    "node-sass": "^4.1.1",
-    "nodemon": "^1.11.0",
-    "particlesjs": "^1.0.2",
     "react": "^0.14.5",
-    "react-addons-css-transition-group": "^15.4.1",
     "react-dom": "^0.14.5",
-    "react-redux": "^5.0.1",
     "redux": "^3.6.0",
-    "sass-loader": "^4.1.0",
-    "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7"
+    "react-redux": "^5.0.1",
+    "react-addons-css-transition-group": "^15.4.1"
   },
   "scripts": {
     "start": "open http://localhost:3000/webpack-dev-server/ && webpack-dev-server --history-api-fallback",
     "build": "webpack"
   },
   "devDependencies": {
+    "node-sass": "^4.1.1",
+    "nodemon": "^1.11.0",
+    "sass-loader": "^4.1.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "css-loader": "^0.26.0",
     "babel-core": "^6.3.26",
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.3.13",
