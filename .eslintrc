@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "airbnb-base",
+    "airbnb-base/rules/strict",
+    "airbnb/rules/react"
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./webpack.config.js"
+      }
+    }
+  },
+  "env": {
+    "browser": true
+  },
+  "rules":{
+    "react/forbid-prop-types": 0,
+    "react/prefer-stateless-function": 0,
+    "react/prop-types": 0
+  },
+  "globals": {
+    "document": true,
+    "window": true
+  }
+}

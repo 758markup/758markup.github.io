@@ -1,0 +1,53 @@
+.linkCard{
+  background-color:#FFFFFF;
+  display: table;
+  width:100%;
+  transition: all .2s;
+}
+
+.linkCard:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 2px 10px #000;
+}
+
+.linkCard *{
+  box-sizing: border-box;
+}
+
+.linkCard:link{
+  text-decoration: none;
+}
+
+.linkCardImg{
+  display: table-cell;
+  width:200px;
+}
+
+.linkCardDesc{
+  padding:20px;
+  font-size:16px;
+  display:table-cell;
+  color: #323330;
+  vertical-align: top;
+  text-align:left;
+  width: 100%;
+}
+
+.linkCardTitle{
+  font-size: 30px;
+}
+
+@media screen and (max-width:767px){
+  .linkCard{
+    display: block;
+  }
+  .linkCardImg{
+    display: block;
+  }
+  .linkCardDesc{
+    display: block;
+  }
+  .linkCardDesc{
+    padding:10px;
+  }
+}

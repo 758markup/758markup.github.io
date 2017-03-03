@@ -1,0 +1,36 @@
+.main{
+  position: relative;
+  height:384px;
+  overflow-y: hidden;
+}
+
+.outer{
+  position: absolute;
+  width:100%;
+  height:100%;
+  display:table;
+}
+
+.inner{
+  display:table-cell;
+  vertical-align: middle;
+  color:#323330;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 80px;
+  font-family: Montserrat,sans-serif;
+}
+
+.myCanvas{
+  background-color:#f7df1e;
+  width: 100%;
+}
+
+@media screen and (max-width:767px){
+  .inner{
+    font-size: 40px;
+  }
+  .main{
+    height:192px;
+  }
+}
