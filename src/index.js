@@ -16,7 +16,7 @@ class App extends React.Component {
         <div className={styles.main}>
           <div className={styles.outer}>
             <h1 className={styles.inner}>
-              Nagoya.js
+              名古屋マークアップ勉強会 - The Final3
             </h1>
           </div>
           <canvas id="myCanvas" className={styles.myCanvas}></canvas>

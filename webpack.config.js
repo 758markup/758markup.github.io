@@ -5,11 +5,11 @@ var path = require('path');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: './docs',
-    filename: 'js/bundle.min.js'
+    path: './',
+    filename: 'dist/bundle.min.js'
   },
   devServer: {
-    contentBase: 'docs',
+    contentBase: './',
     port: 3000
   },
   devtool: 'source-map',
@@ -37,17 +37,5 @@ module.exports = {
         loader: 'url-loader'
       }
     ]
-  },
-  plugins: [
-    new CopyWebpackPlugin([
-      {
-        from: './src/index.html'
-      }
-    ]),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
-    })
-  ]
+  }
 };
