@@ -4,9 +4,9 @@ import styles from './index.scss';
 import GithubRibbon from './components/github-ribbon/github-ribbon.jsx';
 import Section from './components/section/section.jsx';
 import LinkCard from './components/link-card/link-card.jsx';
-const AboutNagoyaJS = `Nagoya.js (なごやじぇいえす) は名古屋を中心に活動する JavaScript ユーザーのコミュニティです。\n
+const AboutNagoyaJS = `名古屋マークアップ勉強会は名古屋を中心に活動するマークアップエンジニアに必要なスキルを中心に勉強するコミュニティです。\n
 勉強会を定期的に開催しています。\n
-JavaScript に興味があればどなたでも歓迎いたします。`;
+マークアップ・フロントエンドの技術に興味があればどなたでも歓迎いたします。`;
 
 class App extends React.Component {
   render() {
@@ -16,23 +16,23 @@ class App extends React.Component {
         <div className={styles.main}>
           <div className={styles.outer}>
             <h1 className={styles.inner}>
-              名古屋マークアップ勉強会 - The Final3
+              <div class={styles.innerText}>名古屋マークアップ勉強会</div><div class={styles.innerText}>The Final</div>
             </h1>
           </div>
           <canvas id="myCanvas" className={styles.myCanvas}></canvas>
         </div>
-        <Section title="Nagoya.jsとは"
+        <Section title="名古屋マークアップ勉強会とは"
           text={AboutNagoyaJS} />
         <Section title="次のイベント" text="">
           <LinkCard
-            src="https://dzpp79ucibp5a.cloudfront.net/assets/doorkeeper_group_normal-125b448b722fa8c158516cf4b86aafda26b442af55a001418b0eb2acf7117961.gif"
-            title="Nagoya.js #2"
-            text="名古屋のフロントエンドの仲間を増やすためのJavaScript勉強会です。"
-            href="https://nagoya-js.doorkeeper.jp/events/56872"
+            src="https://dzpp79ucibp5a.cloudfront.net/groups_logos/6557_normal_1442671798_54262531361cd-1_original_original_original.png"
+            title="名古屋マークアップ勉強会 The Final"
+            text="名古屋のフロントエンドの仲間を増やすための勉強会です。"
+            href="https://758markup.doorkeeper.jp/"
           />
         </Section>
         <Section title="お問い合わせ" text="">
-          <p>質問等ありましたら Twitter で <a href="https://twitter.com/steelydylan">@steelydylan</a> までお問い合わせください。</p>
+          <p>質問等ありましたら Twitter で <a href="https://twitter.com/KasumiMorita">@KasumiMorita</a> までお問い合わせください。</p>
         </Section>
       </div>
     );
@@ -46,14 +46,13 @@ class App extends React.Component {
       }
       Particles.init({
         selector: '#myCanvas',
-        color: '#323330',
+        color: '#ffffff',
         connectParticles: true,
         minDistance: 140,
         maxParticles: particles
       });
     },1000);
   }
-
 }
 
 ReactDOM.render(
